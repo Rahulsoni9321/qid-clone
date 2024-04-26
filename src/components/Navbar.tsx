@@ -28,7 +28,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 flex justify-between px-6 md:px-16 items-center bg-black  border-b-[0.5px] border-stone-800 py-2 md:py-6 w-full shadow-lg shadow-black/50">
+    <div className="fixed top-0 flex justify-between px-6 md:px-16 items-center bg-black  border-b-[0.5px] border-stone-800 py-4 md:py-6 w-full shadow-lg shadow-black/50">
       <Link
         onClick={()=>{handleclick("qid")}}
         to={"/"}
