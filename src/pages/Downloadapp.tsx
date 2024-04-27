@@ -5,13 +5,13 @@ const Downloadapp = () => {
   const classname = "w-full mb-1 hover:cursor-pointer";
   return (
     <div className="min-w-screen  flex flex-col items-center">
-      <div className="w-full pb-8 pt-28 md:px-4 max-w-6xl flex flex-col gap-x-3 md:grid md:grid-cols-2 md:place-items-center items-center justify-center">
+      <div className="w-full pb-8 px-3 pt-28 md:px-4 max-w-6xl flex flex-col gap-x-3 md:grid md:grid-cols-2 md:place-items-center items-center justify-center">
         <div className=" flex-grow flex flex-col gap-5">
-          <div className="text-6xl font-abc font-extrabold text-black tracking-tight">
+          <div className="text-4xl  md:text-6xl font-abc font-extrabold text-black tracking-tight">
             Get the qid App
           </div>
-          <div className="flex items-center justify-between gap-2">
-            <div className="w-3/5 flex flex-col gap-3 py-4 px-3">
+          <div className="flex md:flex-row flex-col items-center justify-between gap-2">
+            <div className="w-full md:w-3/5 flex flex-col gap-3 py-4 md:px-3">
               <Link
                 to={"https://apps.apple.com/us/app/qid-quick-id/id1629041779"}
               >
@@ -33,7 +33,7 @@ const Downloadapp = () => {
                 ></img>
               </Link>
             </div>
-            <div className="w-2/5">
+            <div className="w-full md:w-2/5">
               <img src="\qr-code-5-2.png"></img>
             </div>
           </div>
