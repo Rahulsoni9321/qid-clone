@@ -87,7 +87,7 @@ const LandingPage = () => {
               description={Businesscardcontent[1].description}
             ></BusinessCard>
           </div>
-          <div className="w-full md:w-3/4 grid  grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8  ">
+          <div className="w-full md:w-3/4 grid  grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4 md:gap-y-8  ">
             <div className="w-full col-span-1 md:col-span-2">
               <AnalyticsCard
                 imagelink="\Asset-7.png"
@@ -133,10 +133,10 @@ const LandingPage = () => {
             Let’s dive into the real stories of how our service has touched the
             lives of our customers.
           </div>
-          <div className="pt-8 hidden lg:block container h-full pb-16">
+          <div className="pt-8 hidden lg:block  h-full pb-16">
             <Slick1></Slick1>
           </div>
-          <div className="pt-8 container block lg:hidden h-full pb-16">
+          <div className="pt-8  block lg:hidden h-full pb-16">
             <Slick2></Slick2>
           </div>
         </div>

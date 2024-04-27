@@ -1,26 +1,33 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { ImCross } from "react-icons/im";
 
 const Navbar = () => {
   const [open,setopen]=useState(false)
   const [appactive, setappactive] = useState(false);
   const [support, setsupport] = useState(false);
   const [cform, setcform] = useState(false);
+  
+  const dropdownstyle="hover:cursor-pointer transform duration-150 bg-[#202020] border-b-[1px] border-black px-4 py-3"
+  const dropdownstyleactive="hover:cursor-pointer transform duration-150 bg-[#3f444b] border-b-[1px] border-black px-4 py-3"
 
   const handleclick = (name: string) => {
     if (name == "app") {
       setappactive(true);
       setcform(false);
       setsupport(false);
+      setopen(!open)
     } else if (name == "support") {
       setappactive(false);
       setcform(false);
       setsupport(true);
+      setopen(!open)
     } else if (name=="C-Form Pro") {
       setappactive(false);
       setcform(true);
       setsupport(false);
+      setopen(!open)
     }
     else {
       setappactive(false);
@@ -29,8 +36,8 @@ const Navbar = () => {
     }
   };
 
-  return (
-    <div className="fixed z-10 top-0 flex justify-between px-6 md:px-16 items-center bg-black  border-b-[0.5px] border-stone-800 py-4 md:py-6 w-full shadow-lg shadow-black/50">
+  return (<div className="fixed  top-0 flex flex-col w-screen bg-black z-10 ">
+    <div className=" flex md:max-w-7xl lg:mx-auto justify-between px-6 md:px-16 items-center border-b-[0.5px] border-stone-800 py-4 md:py-6 w-full ">
       <Link
         onClick={()=>{handleclick("qid")}}
         to={"/"}
@@ -61,25 +68,45 @@ const Navbar = () => {
           Contact
         </Link>
       </div>
-      <div className="block md:hidden">
+      <div className="block md:hidden ">
       
-<script src="//unpkg.com/alpinejs" defer></script>
 
 
-<div onClick={()=>setopen(!open)} className="relative inline-block text-left " x-data="{ open: false }">
-  <button  className="w-full bg-white border border-gray-200 text-gray-700  rounded inline-flex justify-between items-center dark:bg-[#20293A] dark:border-slate-700 dark:text-gray-400">
-    <RxHamburgerMenu/>
+<div onClick={()=>setopen(!open)} className="relative inline-block text-left " >
+  <button  className="w-full  text-gray-700  rounded inline-flex justify-between items-center ">
+    {open ? <ImCross className="w-8 h-6"/>:<RxHamburgerMenu className="w-12 h-8"/>}
     
   </button>
 
-  {/* {open ? <div x-show="open" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" className="absolute z-50 mt-2 w-screen rounded-md   shadow-lg bg-white border border-gray-200 dark:bg-[#20293A] dark:border-slate-700">
-    <div className="py-1 text-gray-700 dark:text-gray-400 text-sm w-sreen" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-      <a href="#" className="block px-4 py-2  hover:bg-gray-100 dark:hover:bg-[#161d2a]" role="menuitem">Option 1</a>
-      <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#161d2a]" role="menuitem">Option 2</a>
-      <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#161d2a]" role="menuitem">Option 3</a>
-    </div>
-  </div>:<></>} */}
   </div>
+  </div>
+  </div>
+  <div className={open ? "fixed pt-16   flex flex-col text-gray-100 font-abc font-bold text-md w-screen transform ease-in duration-110":"hidden"}>
+  <Link
+          to={"/app"}
+          onClick={() => {
+            handleclick("app")
+          
+          }}
+          className={appactive ? dropdownstyleactive:dropdownstyle}
+        >
+          App
+        </Link>
+            <Link
+          to={"/home/c-form-automation-for-hotels"}
+          onClick={() => handleclick("C-Form Pro")}
+          className={cform ?dropdownstyleactive:dropdownstyle}
+        >
+          C-Form Pro
+        </Link>
+        <Link
+          to={"/support"}
+          onClick={() => handleclick("support")}
+          className={support ? dropdownstyleactive:dropdownstyle}
+        >
+          Contact
+        </Link>
+    
   </div>
   </div>
   );

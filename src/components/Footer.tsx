@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className='min-w-screen md:min-h-screen  lg:mx:auto lg:h-fit lg:max-h-screen bg-black flex flex-col gap-12 py-8 md:py-0 px-8 md:px-16 font-abc border-t-[1px] border-gray-500'>
-      <div className='flex flex-col md:flex-row max-w-7xl lg:mx:auto   md:justify-between items-start md:items-center gap-16 px-6   '>
+    <div className='h-screen   2xl:h-fit bg-black py-8 md:py-0 px-8 md:px-16 font-abc border-t-[1px] border-gray-500'>
+      <div className="flex flex-col gap-12 w-11/12  max-w-7xl lg:mx-auto">
+      <div className='flex flex-col md:flex-row   md:justify-between items-start md:items-center gap-16 px-6   '>
         <div className='flex-grow font-bold italic font-poppins text-white/70 text-6xl '>qid</div>
         <Functionalites label='Download App' features={DownloadApp}></Functionalites>
         <Functionalites label='Legal' features={Legal}></Functionalites>
@@ -13,6 +14,7 @@ const Footer = () => {
         <div className='text-white font-bold text-sm md:text-xl md:order-first'>Oneqid Technologies Private Limited</div>
         <Link to={"https://www.linkedin.com/company/oneqid/"} target='_blank' className='order-first md:-order-first w-8 h-8 bg-white rounded-full flex items-center justify-center'><FaLinkedin></FaLinkedin></Link>
       </div>
+    </div>
     </div>
   )
 }

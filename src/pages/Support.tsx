@@ -8,7 +8,7 @@ const Support = () => {
   return (
     <>
       <MaxWidthWrapper>
-        <div className="min-h-screen min-w-screen grid grid-cols-1 md:grid-cols-2 place-items-center md:gap-x-8   md:px-16 font-abc text-white">
+        <div className="min-h-screen lg:mx-auto max-w-7xl  grid grid-cols-1 md:grid-cols-2 place-items-center md:gap-x-8   md:px-16 font-abc text-white">
           <div className="col-span-1 flex flex-col gap-6 pt-32 w-11/12">
             <div className="text-5xl md:text-7xl text-white font-semibold">Contact Us</div>
             <div className="text-2xl text-stone-300/90 leading-tight font-semibold">
