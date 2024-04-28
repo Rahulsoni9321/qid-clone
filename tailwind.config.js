@@ -4,12 +4,12 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  daisyui: {
-    theme:["light"]
-  },
+ 
   theme: {
     extend: {
-     
+      screens:{
+        'xs':'400px'
+      }
     },
    fontFamily:{
       abc:["Raleway", "sans-serif"],

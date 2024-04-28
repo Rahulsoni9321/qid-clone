@@ -29,3 +29,12 @@
   .hide-scroll-bar::-webkit-scrollbar {
 	display: none;
   }
+
+ .boxshadowlanding1 {
+
+	  box-shadow:#16250e  0.25px 0.25px 30px 3px ;
+  }
+ .boxshadowlanding2  {
+
+	  box-shadow: #221d06  0.25px 0.25px 30px 3px ;
+  }

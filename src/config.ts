@@ -1,3 +1,4 @@
+export const CFormcontent=["Your guests upload photos of their Passport and Visa.","Qid's AI engine extracts details like Passport Number, Visa Number,  Name, Country, and Photos from the images","Go to the C-Form website Open the qid C-Form Pro Chrome plugin. Select the guest. Done!"]
 export const ReviewCardDetails = [
   {
     imagelink: "/Dhruv.jpg",
@@ -36,5 +37,51 @@ export const ReviewCardDetails = [
       "Even while on the move, QID allows me to easily monitor and manage the business with precision.",
     name: "Jitesh Agarwal  ",
     designation: "Founder, The Lost Hostels",
+  },
+];
+
+
+export const cardcontent = [
+  {
+    label: "Manage",
+    number: "1",
+    description:
+      "Consolidate all your IDs securely in one place with qid, making them easily accessible whenever you need them",
+  },
+  {
+    label: "Sharing",
+    number: "2",
+    description:
+      "Experience lightening-fast and trackable ID sharing with qid, ensuring seamless and efficient communication",
+  },
+];
+
+export const AnalyticsCardContent = [
+  {
+    heading: "Business Analytics",
+    description:
+      "Unlock the power of data with qid – your ultimate tool for comprehensive business analytics.",
+  },
+  {
+    heading: "Developer APIs",
+    description:
+      "Supercharge your applications with qid’s robust developer APIs, enabling you to effortlessly leverage the full potential of our platform and create unique, personalized experiences for your users.",
+  },
+  {
+    heading: "One-Click C-Form",
+    description:
+      "Simplify C-Form filling with qid’s 1-Click solution, automating the process and saving you time while ensuring compliance.",
+  },
+];
+
+export const Businesscardcontent = [
+  {
+    heading: "Collect IDs with QR",
+    description: "Easy to setup QR code stand",
+  },
+  {
+    heading: "Customized Interface",
+    description:
+      "Tailor qid’s interface to perfectly align with your brand, creating a seamless and personalized user experience.",
   },
 ];
