@@ -2,7 +2,7 @@
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ReviewCardDetails } from "../config";
+import { ReviewCardDetails } from "../../config";
 import ReviewCard from "./ReviewCard";
 
 export const Slick1 = () => {
@@ -19,7 +19,7 @@ export const Slick1 = () => {
     
   };
   return (
-    <Slider {...settings} className="cursor-grab">
+    <Slider {...settings} className="cursor-grab flex justify-around gap-12">
       
       {ReviewCardDetails.map((details)=>{
           if (details.place)
@@ -49,7 +49,7 @@ export const Slick2 = () => {
     
   };
   return (
-    <Slider {...settings} className="cursor-grab focus:cursor-grabbing">
+    <Slider {...settings} className="cursor-grab">
       
       {ReviewCardDetails.map((details)=>{
           if (details.place)
@@ -62,4 +62,4 @@ export const Slick2 = () => {
   );
 }
 
-
+ 

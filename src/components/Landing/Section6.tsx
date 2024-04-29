@@ -1,4 +1,4 @@
-import MaxWidthWrapper from "./MaxWidthWrapper"
+import MaxWidthWrapper from "../MaxWidthWrapper"
 import { Slick1, Slick2 } from "./Slick"
 
 const Section6 = () => {

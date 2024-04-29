@@ -1,4 +1,4 @@
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import MaxWidthWrapper from "../MaxWidthWrapper";
 
 const Section3 = () => {
   return (

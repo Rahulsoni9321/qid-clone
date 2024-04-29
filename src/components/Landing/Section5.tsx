@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom';
-import MaxWidthWrapper from './MaxWidthWrapper';
+import MaxWidthWrapper from '../MaxWidthWrapper';
 import BusinessCard from './BusinessCard';
 import AnalyticsCard from './AnalyticsCard';
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { AnalyticsCardContent, Businesscardcontent } from '../config';
+import { AnalyticsCardContent, Businesscardcontent } from '../../config';
 
 
 const Section5 = () => {

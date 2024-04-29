@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import BasicCard from "./BasicCard";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import MaxWidthWrapper from "../MaxWidthWrapper";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { cardcontent } from "../config";
+import { cardcontent } from "../../config";
 
 
 const Section2 = () => {

@@ -1,10 +1,10 @@
 import Footer from "../components/Footer";
-import HeroSection from "../components/HeroSection";
-import Section3 from "../components/Section3";
-import Section2 from "../components/Section2";
-import Section4 from "../components/Section4";
-import Section6 from "../components/Section6";
-import Section5 from "../components/Section5";
+import HeroSection from "../components/Landing/HeroSection";
+import Section3 from "../components/Landing/Section3";
+import Section2 from "../components/Landing/Section2";
+import Section4 from "../components/Landing/Section4";
+import Section6 from "../components/Landing/Section6";
+import Section5 from "../components/Landing/Section5";
 
 const LandingPage = () => {
   return (
