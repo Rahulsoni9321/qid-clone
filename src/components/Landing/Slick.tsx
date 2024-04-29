@@ -19,7 +19,7 @@ export const Slick1 = () => {
     
   };
   return (
-    <Slider {...settings} className="cursor-grab flex justify-around gap-12">
+    <Slider {...settings} className="cursor-grab ">
       
       {ReviewCardDetails.map((details)=>{
           if (details.place)

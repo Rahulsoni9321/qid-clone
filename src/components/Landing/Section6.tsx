@@ -16,10 +16,10 @@ const Section6 = () => {
             Let’s dive into the real stories of how our service has touched the
             lives of our customers.
           </div>
-          <div className="pt-8 hidden lg:block  h-full pb-16">
+          <div className="pt-8 hidden lg:block   pb-16">
             <Slick1></Slick1>
           </div>
-          <div className="pt-8  block lg:hidden h-full pb-16">
+          <div className="pt-8  block lg:hidden  pb-16">
             <Slick2></Slick2>
           </div>
         </div>
